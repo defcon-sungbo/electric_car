@@ -1,7 +1,8 @@
-package com.defcon.electric_car
+package com.defcon.electric_car.ui.main
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import com.defcon.electric_car.R
 
 class MainActivity : AppCompatActivity() {
 
