@@ -30,11 +30,29 @@ class BottomFragment : Fragment() {
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        // TODO: Use the ViewModel
 
-//        changeBottomView(BottomViewState.Default)
+        changeBottomView(BottomViewState.Default)
         initSlideAnimation()
         bindView()
+    }
+
+    private fun changeBottomView(viewState: BottomViewState, selectedItem : Any? = null ) {
+        //TODO:: ADD DATA;;
+        when(viewState){
+            BottomViewState.Default -> {  setDefaultBottomStateView() }
+            BottomViewState.PinSelected -> { setSelectedBottomStateView()}
+        }
+    }
+
+    fun setDefaultBottomStateView() {
+        fragmentManager!!.beginTransaction()
+            .replace(R.id.container_bottom_fragment, DefaultBottomFragment.newInstance())
+            .commit()
+    }
+    fun setSelectedBottomStateView() {
+        fragmentManager!!.beginTransaction()
+            .replace(R.id.container_bottom_fragment, OnPinSelectedFragment.newInstance())
+            .commit()
     }
 
 
@@ -69,4 +87,10 @@ class BottomFragment : Fragment() {
     fun bindView() {
 
     }
+}
+
+enum class BottomViewState {
+    Default,
+    PinSelected,
+
 }
