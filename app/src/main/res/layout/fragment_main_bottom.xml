@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:background="@color/black"
+            >
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_marginStart="16dp"
+                android:paddingTop="28dp"
+                android:paddingBottom="28dp"
+                app:layout_anchor="@+id/dragView"
+                app:layout_anchorGravity="top|left">
+
+
+            <ImageButton
+                    android:background="@drawable/bg_round12_fill_white"
+                    android:id="@+id/button_focus_current_location"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:clipToPadding="false"
+                    android:elevation="8dp"
+                    android:backgroundTint="@color/white"
+            />
+
+        </LinearLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/dragView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:backgroundTint="@color/pure_white"
+                android:clipToPadding="false"
+                android:elevation="16dp"
+                app:behavior_peekHeight="176dp"
+                app:layout_behavior="@string/bottom_sheet_behavior"
+
+        >
+
+
+            <androidx.core.widget.NestedScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" tools:ignore="MissingConstraints">
+
+                <RelativeLayout
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:descendantFocusability="blocksDescendants">
+                    <com.makeramen.roundedimageview.RoundedImageView
+                            android:id="@+id/background"
+                            android:layout_width="match_parent"
+                            android:layout_height="2000dp"
+                            android:scaleType="centerCrop"
+                            android:src="@color/pure_white"
+                            app:riv_corner_radius_top_left="24dp"
+                            app:riv_corner_radius_top_right="24dp"
+                            tools:ignore="MissingConstraints"
+                            tools:layout_editor_absoluteX="0dp"
+                            tools:layout_editor_absoluteY="0dp" />
+
+                    <FrameLayout
+                            android:id="@+id/container_bottom_fragment"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent" />
+
+                </RelativeLayout>
+
+
+            </androidx.core.widget.NestedScrollView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
