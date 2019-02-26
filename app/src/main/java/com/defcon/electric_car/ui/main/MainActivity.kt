@@ -13,6 +13,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         initMap()
         initMainBottom()
+
+
     }
 
     private fun initMap() {

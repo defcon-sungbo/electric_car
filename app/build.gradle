@@ -31,19 +31,21 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 
-    //material
+    //Material
     implementation 'com.google.android.material:material:1.1.0-alpha02'
 
+    //Google Map and Services
+    implementation 'com.google.android.gms:play-services-maps:16.0.0'
+    implementation 'com.google.android.gms:play-services-location:16.0.0'
 
-
-    // region Legacy Support
+    //Region Legacy Support
     implementation 'com.android.support:support-v4:28.0.0'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
 
 
-    //RounedImageView
+    //Rouned Image View
     implementation 'com.makeramen:roundedimageview:2.3.0'
 
-    //retrofit
+    //Retrofit
     implementation "com.squareup.retrofit2:retrofit:2.3.0"
 }
