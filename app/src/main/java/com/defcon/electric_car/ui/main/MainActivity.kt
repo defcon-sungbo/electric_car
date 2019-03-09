@@ -6,7 +6,7 @@ import com.defcon.electric_car.GotoActivity
 import com.defcon.electric_car.R
 import com.defcon.electric_car.ui.main.bottom.BottomFragment
 import com.defcon.electric_car.ui.main.map.MapFragment
-import com.defcon.electric_car.ui.main.setting.SettingsActivity
+import com.defcon.electric_car.ui.setting.SettingsActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {

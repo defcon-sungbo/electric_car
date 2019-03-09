@@ -1,4 +1,4 @@
-package com.defcon.electric_car.ui.main.setting
+package com.defcon.electric_car.ui.setting
 
 import android.content.res.Configuration
 import android.os.Bundle

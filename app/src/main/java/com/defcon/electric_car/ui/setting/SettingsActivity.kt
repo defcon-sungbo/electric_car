@@ -1,4 +1,4 @@
-package com.defcon.electric_car.ui.main.setting
+package com.defcon.electric_car.ui.setting
 
 import android.annotation.TargetApi
 import android.content.Context

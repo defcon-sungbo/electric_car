@@ -1,4 +1,4 @@
-package com.defcon.electric_car.ui.main.bottom
+package com.defcon.electric_car.ui.main.bottom.pin_selected_state
 
 
 import android.os.Bundle

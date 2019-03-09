@@ -1,11 +1,16 @@
-package com.defcon.electric_car.ui.main.bottom
+package com.defcon.electric_car.ui.main.bottom.default_state
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.defcon.electric_car.R
+import com.defcon.electric_car.model.ChargerModel
+import com.defcon.electric_car.ui.component.ChargerRecyclerAdapter
+import kotlinx.android.synthetic.main.fragment_default_bottom.*
 
 class DefaultBottomFragment : Fragment() {
 
@@ -24,5 +29,17 @@ class DefaultBottomFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        initRecycler()
+    }
+
+    fun initRecycler() {
+
+        var lm =  LinearLayoutManager(context);
+        lm.orientation = RecyclerView.VERTICAL;
+        recycler.layoutManager = lm;
+        recycler.adapter = ChargerRecyclerAdapter().apply {
+            data = mutableListOf(ChargerModel(0.0,0.0,"",""))
+        }
+
     }
 }

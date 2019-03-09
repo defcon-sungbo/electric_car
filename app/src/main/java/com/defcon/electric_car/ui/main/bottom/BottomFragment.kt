@@ -6,6 +6,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.defcon.electric_car.R
+import com.defcon.electric_car.ui.main.bottom.default_state.DefaultBottomFragment
+import com.defcon.electric_car.ui.main.bottom.pin_selected_state.OnPinSelectedFragment
 import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.makeramen.roundedimageview.Corner
 import kotlinx.android.synthetic.main.fragment_main_bottom.*
