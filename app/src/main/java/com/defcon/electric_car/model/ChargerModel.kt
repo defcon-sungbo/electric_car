@@ -19,7 +19,7 @@ data class ChargerModel(var lat : Double , var lon : Double,
 }
 
 data class NearByModel(var lat : Double , var lon : Double,
-                        var Name : String, var img : String){
+                        var Name : String, var img : List<String>){
     fun location(): Location {
         var a = Location("")
         a.longitude = this. lon

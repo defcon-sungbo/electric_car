@@ -17,7 +17,7 @@
 
 
     <androidx.appcompat.widget.LinearLayoutCompat android:layout_width="match_parent"
-                                                  android:layout_height="43dp"
+                                                  android:layout_height="wrap_content"
                                                   app:layout_constraintTop_toBottomOf="@+id/cargerName"
                                                   android:layout_marginTop="20dp"
                                                   app:layout_constraintStart_toStartOf="parent"
@@ -30,15 +30,144 @@
                                                      style="@style/Base.TextAppearance.AppCompat.Subhead"
         />
 
-        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent"
-                                                           android:layout_height="wrap_content">
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical"
+        >
 
-            <androidx.appcompat.widget.AppCompatTextView android:layout_width="wrap_content"
-                                                         android:layout_height="wrap_content" android:text="3.2KM"
-                                                         style="@style/TextAppearance.AppCompat.Medium"
-                                                         app:layout_constraintEnd_toEndOf="parent"
-                                                         android:layout_marginEnd="8dp"/>
-        </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+                <ImageView android:layout_width="32dp"
+                           android:layout_height="32dp"
+                           android:src="@drawable/ic_24"
+                           android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="parent"
+                           android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"
+                           android:id="@+id/imageView"/>
+                <androidx.appcompat.widget.AppCompatTextView android:layout_width="wrap_content"
+                                                             android:layout_height="wrap_content"
+                                                             android:text="충전 비용"
+                                                             app:layout_constraintStart_toEndOf="@+id/imageView"
+                                                             android:layout_marginStart="8dp"
+                                                             android:layout_marginTop="8dp"
+                                                             style="@style/TextAppearance.MaterialComponents.Body1"
+
+                                                             app:layout_constraintTop_toTopOf="parent"
+                                                             android:layout_marginBottom="8dp"
+                                                             app:layout_constraintBottom_toBottomOf="parent"/>
+                <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/cost"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="330 KW/W"
+                        style="@style/TextAppearance.MaterialComponents.Body1"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginTop="8dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:layout_marginBottom="8dp"
+                        app:layout_constraintBottom_toBottomOf="parent"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+                <ImageView android:layout_width="32dp"
+                           android:layout_height="32dp"
+                           android:src="@drawable/ic_24"
+                           android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="parent"
+                           android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"
+                           android:id="@+id/imageView"/>
+                <androidx.appcompat.widget.AppCompatTextView android:layout_width="wrap_content"
+                                                             android:layout_height="wrap_content"
+                                                             android:text="충전 비용"
+                                                             app:layout_constraintStart_toEndOf="@+id/imageView"
+                                                             android:layout_marginStart="8dp"
+                                                             android:layout_marginTop="8dp"
+                                                             style="@style/TextAppearance.MaterialComponents.Body1"
+
+                                                             app:layout_constraintTop_toTopOf="parent"
+                                                             android:layout_marginBottom="8dp"
+                                                             app:layout_constraintBottom_toBottomOf="parent"/>
+                <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/cost"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="330 KW/W"
+                        style="@style/TextAppearance.MaterialComponents.Body1"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginTop="8dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:layout_marginBottom="8dp"
+                        app:layout_constraintBottom_toBottomOf="parent"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+                <ImageView android:layout_width="32dp"
+                           android:layout_height="32dp"
+                           android:src="@drawable/ic_24"
+                           android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="parent"
+                           android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"
+                           android:id="@+id/imageView"/>
+                <androidx.appcompat.widget.AppCompatTextView android:layout_width="wrap_content"
+                                                             android:layout_height="wrap_content"
+                                                             android:text="충전 비용"
+                                                             app:layout_constraintStart_toEndOf="@+id/imageView"
+                                                             android:layout_marginStart="8dp"
+                                                             android:layout_marginTop="8dp"
+                                                             style="@style/TextAppearance.MaterialComponents.Body1"
+
+                                                             app:layout_constraintTop_toTopOf="parent"
+                                                             android:layout_marginBottom="8dp"
+                                                             app:layout_constraintBottom_toBottomOf="parent"/>
+                <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/cost"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="330 KW/W"
+                        style="@style/TextAppearance.MaterialComponents.Body1"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginTop="8dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:layout_marginBottom="8dp"
+                        app:layout_constraintBottom_toBottomOf="parent"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+                <ImageView android:layout_width="32dp"
+                           android:layout_height="32dp"
+                           android:src="@drawable/ic_24"
+                           android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="parent"
+                           android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"
+                           android:id="@+id/imageView"/>
+                <androidx.appcompat.widget.AppCompatTextView android:layout_width="wrap_content"
+                                                             android:layout_height="wrap_content"
+                                                             android:text="충전 비용"
+                                                             app:layout_constraintStart_toEndOf="@+id/imageView"
+                                                             android:layout_marginStart="8dp"
+                                                             android:layout_marginTop="8dp"
+                                                             style="@style/TextAppearance.MaterialComponents.Body1"
+
+                                                             app:layout_constraintTop_toTopOf="parent"
+                                                             android:layout_marginBottom="8dp"
+                                                             app:layout_constraintBottom_toBottomOf="parent"/>
+                <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/cost"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="330 KW/W"
+                        style="@style/TextAppearance.MaterialComponents.Body1"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginTop="8dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:layout_marginBottom="8dp"
+                        app:layout_constraintBottom_toBottomOf="parent"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
 
     </androidx.appcompat.widget.LinearLayoutCompat>
     <androidx.appcompat.widget.LinearLayoutCompat android:layout_width="match_parent"
@@ -59,6 +188,8 @@
                 android:id="@+id/near"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                tools:listitem="@layout/card_near"
+
         ></androidx.recyclerview.widget.RecyclerView>
     </androidx.appcompat.widget.LinearLayoutCompat>
 
