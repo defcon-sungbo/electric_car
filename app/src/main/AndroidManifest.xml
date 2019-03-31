@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          xmlns:tools="http://schemas.android.com/tools"
-          package="com.defcon.electric_car">
+<manifest
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        package="com.defcon.electric_car">
 
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
@@ -15,35 +16,33 @@
             android:label="@string/app_name"
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
-            android:theme="@style/AppTheme">
+            android:theme="@style/AppTheme"
+            tools:ignore="GoogleAppIndexingWarning">
 
-        <!-- java.lang.NoClassDefFoundError: Failed resolution of: Lorg/apache/http/ProtocolVersion; -->
         <uses-library
                 android:name="org.apache.http.legacy"
-                android:required="false"/>
+                android:required="false" />
 
-        <activity
-                android:name=".ui.setting.SettingsActivity"
-                android:label="@string/title_activity_settings">
-        </activity>
-
-        <uses-library android:name="com.google.android.maps"/>
-
+        <uses-library
+                android:name="com.google.android.maps"/>
         <meta-data
                 android:name="com.google.android.geo.API_KEY"
                 android:value="AIzaSyAJRNBBeHJzpXVnsdt93jGuWXsS5qiL9qY"/>
 
+        <activity
+                android:name="com.defcon.electric_car.ui.setting.SettingsActivity"
+                android:label="@string/title_activity_settings"/>
 
         <activity android:name=".ui.main.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
-
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
         <activity android:name=".ui.main.charger_detail.ChargerDetialActivity">
 
         </activity>
+
     </application>
 
 </manifest>
