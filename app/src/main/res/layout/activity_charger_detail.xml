@@ -11,7 +11,7 @@
             android:id="@+id/cargerName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            style="@style/TextAppearance.AppCompat.Large"
+            style="@style/TextAppearance.AppCompat.Display1"
             android:text="성보 충전소" android:layout_marginTop="16dp" app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="16dp"/>
 
@@ -27,7 +27,7 @@
         <androidx.appcompat.widget.AppCompatTextView android:layout_width="wrap_content"
                                                      android:layout_height="wrap_content"
                                                      android:text="충전소 정보"
-                                                     style="@style/Base.TextAppearance.AppCompat.Subhead"
+                                                     style="@style/Base.TextAppearance.AppCompat.Headline"
         />
 
         <LinearLayout android:layout_width="match_parent"
@@ -178,10 +178,12 @@
                                                   android:layout_marginTop="8dp"
                                                   app:layout_constraintStart_toStartOf="parent"
                                                   android:layout_marginStart="16dp">
-        <androidx.appcompat.widget.AppCompatTextView android:layout_width="wrap_content"
-                                                     android:layout_height="wrap_content"
-                                                     android:text="충전소 주변 시설"
-                                                     style="@style/Base.TextAppearance.AppCompat.Subhead"
+        <androidx.appcompat.widget.AppCompatTextView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="충전소 주변 시설"
+                style="@style/Base.TextAppearance.AppCompat.Headline"
         />
 
         <androidx.recyclerview.widget.RecyclerView
