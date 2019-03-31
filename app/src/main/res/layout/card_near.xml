@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                   xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical"
+              android:layout_width="250dp"
+              android:layout_height="300dp">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent"
+                                                       android:layout_height="match_parent">
+
+        <com.makeramen.roundedimageview.RoundedImageView android:layout_width="match_parent"
+                                                         android:layout_height="250dp"
+                                                         android:src="@color/sun_yellow"
+                                                         android:id="@+id/roundedImageView"/>
+        <androidx.appcompat.widget.AppCompatTextView android:layout_width="wrap_content"
+                                                     android:layout_height="wrap_content"
+                                                     android:text="성보고등학교"
+                                                     app:layout_constraintTop_toBottomOf="@+id/roundedImageView"
+                                                     app:layout_constraintStart_toStartOf="parent"
+                                                     style="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
+                                                     android:layout_marginTop="8dp"
+                                                     android:layout_marginStart="8dp"
+                                                     android:id="@+id/appCompatTextView4"/>
+        <androidx.appcompat.widget.AppCompatTextView android:layout_width="wrap_content"
+                                                     android:layout_height="wrap_content"
+                                                     android:text="성보의 자랑, 유용민이 나온학교"
+                                                     app:layout_constraintTop_toBottomOf="@+id/appCompatTextView4"
+                                                     app:layout_constraintStart_toStartOf="@+id/appCompatTextView4"
+
+        />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>
