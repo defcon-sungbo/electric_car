@@ -1,6 +1,5 @@
 package com.defcon.electric_car.ui.main
 
-import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.defcon.electric_car.GotoActivity
@@ -18,7 +17,6 @@ class MainActivity : AppCompatActivity() {
         initMap()
         initMainBottom()
         initButton()
-
     }
 
     private fun initButton() {
