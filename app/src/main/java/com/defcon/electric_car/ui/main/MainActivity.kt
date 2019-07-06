@@ -8,6 +8,7 @@ import com.defcon.electric_car.R
 import com.defcon.electric_car.ui.main.bottom.BottomFragment
 import com.defcon.electric_car.ui.main.map.MapFragment
 import com.defcon.electric_car.ui.setting.SettingsActivity
+import com.defcon.electric_car.ui.test.StyleTestActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -23,7 +24,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun initButton() {
         setting.setOnClickListener {
-            GotoActivity(SettingsActivity::class.java)
+            GotoActivity(StyleTestActivity::class.java)
         }
     }
 

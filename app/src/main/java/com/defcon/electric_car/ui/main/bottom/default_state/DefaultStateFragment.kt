@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.defcon.electric_car.GotoActivity
 import com.defcon.electric_car.R
 import com.defcon.electric_car.model.ChargerModel
 import com.defcon.electric_car.ui.component.ChargerRecyclerAdapter
@@ -42,8 +43,10 @@ class DefaultBottomFragment : Fragment() {
         recycler.adapter = ChargerRecyclerAdapter(context = this!!.context!!).apply {
             data = mutableListOf(ChargerModel(0.0,0.0,"",""),ChargerModel(0.0,0.0,"",""))
             onClickListner = {chargerModel ->
-                    var intent = Intent(this@DefaultBottomFragment.activity, ChargerDetialActivity::class.java);
-                    this@DefaultBottomFragment.activity!!.startActivity(intent)
+//                    var intent = Intent(this@DefaultBottomFragment.activity, ChargerDetialActivity::class.java);
+//                    this@DefaultBottomFragment.activity!!.startActivity(intent)
+//                    ChargerDetialActivity.data = chargerModel
+                GotoActivity(ChargerDetialActivity::class.java, {ChargerDetialActivity.data = chargerModel})
             }
         }
 

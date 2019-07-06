@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="H1"
+              style="@style/H1"
+    />
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="H2"
+              style="@style/H2"
+    />
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Link"
+              style="@style/Link"
+    />
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              style="@style/InputText"
+              android:text="InputText"/>
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              style="@style/ExplainText"
+              android:text="ExplainText"/>
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              style="@style/InputTextBold"
+              android:text="InputText(Bold)"/>
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              style="@style/Content"
+              android:text="Content"/>
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              style="@style/Title"
+              android:text="Title"/>
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              style="@style/SubLittle"
+              android:text="SubLittle"/>
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              style="@style/ContentLittle"
+              android:text="ContentLittle"/>
+
+
+</LinearLayout>

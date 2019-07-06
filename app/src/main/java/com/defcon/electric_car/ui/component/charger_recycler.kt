@@ -78,8 +78,6 @@ class NearRecyclerAdapter(
                     context
                 )
                 .load(item.img[0])
-                .centerCrop()
-                .placeholder(R.drawable.abc_spinner_textfield_background_material)
                 .into(findViewById<ImageView>(R.id.roundedImageView));
 
             findViewById<AppCompatTextView>(R.id.appCompatTextView4).setText(item.Name)

@@ -25,7 +25,6 @@ class MapFragment : Fragment() {
         )
         val mMapView = v.findViewById(com.defcon.electric_car.R.id.mapView) as MapView
         mMapView.onCreate(savedInstanceState)
-
         mMapView.onResume()
 
         try {

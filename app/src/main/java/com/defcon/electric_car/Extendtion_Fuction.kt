@@ -161,6 +161,13 @@ fun Fragment.GotoActivity(cls: Class<*>) {
     this.startActivity(intent)
 }
 
+fun Fragment.GotoActivity(cls: Class<*>,@Nullable subscription: () -> Unit) {
+    var intent = Intent(activity, cls)
+    this.startActivity(intent)
+    subscription()
+}
+
+
 fun Any.getTAG (): String {
     return this.javaClass.simpleName
 }
